@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd" >
+        
+        <!-- 这个xml是实现 bean的装配  标签是bean的装配的配置项-->
+		<!-- 设值注入      
+		<bean id="injectionService" class="com.imooc.ioc.injection.service.InjectionServiceImpl">
+			<property name="injectionDAO" ref="injectionDAO"></property>
+		</bean> 
+		-->
+		
+		<!-- name 是当前对应类的 成员变量的名称 ;	ref 是其他类 bean 的id -->
+		
+		<!-- 构造注入 -->
+		<bean id="injectionService" class="com.imooc.ioc.injection.service.InjectionServiceImpl">
+        	<constructor-arg name="injectionDAO" ref="injectionDAO"></constructor-arg>
+        </bean>
+        
+        <bean id="injectionDAO" class="com.imooc.ioc.injection.dao.InjectionDAOImpl"></bean>
+	
+ </beans>

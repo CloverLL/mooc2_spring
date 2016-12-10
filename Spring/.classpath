@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src/test/java"/>
+	<classpathentry kind="src" path="src/main/resources"/>
+	<classpathentry kind="src" path="src/test/resources"/>
+	<classpathentry kind="src" path="src/main/java"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="lib/apache/commons-logging-1.1.jar"/>
+	<classpathentry kind="lib" path="lib/junit/junit-4.10.jar"/>
+	<classpathentry kind="lib" path="lib/aspect/aspectjrt-1.7.4.jar"/>
+	<classpathentry kind="lib" path="lib/aspect/aopalliance-1.0.jar"/>
+	<classpathentry kind="lib" path="lib/aspect/aspectjweaver-1.7.4.jar"/>
+	<classpathentry kind="lib" path="lib/javax.inject.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Spring"/>
+	<classpathentry kind="output" path="classes"/>
+</classpath>

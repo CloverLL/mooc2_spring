@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd" >
+        
+        <!-- 单例 作用域 当前配置文件初始化之后 在同一容器下不管实例化多少次都只能实例化出一个实例 -->
+        <bean id="beanScope" class="com.imooc.bean.BeanScope" scope="singleton"></bean>
+        
+ </beans>

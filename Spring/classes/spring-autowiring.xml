@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd" 
+
+        default-autowire="constructor"
+        >
+        <!-- 
+        default-autowire="no"
+        default-autowire="byName"
+        default-autowire="byType"
+         -->
+        
+        
+        <!-- 手动装配 
+        <bean id="autoWiringService" class="com.imooc.autowiring.AutoWiringService" >
+        	<property name="autoWiringDAO" ref="autoWiringDAO"></property>
+        </bean>
+        
+        <bean id="autoWiringDAO" class="com.imooc.autowiring.AutoWiringDAO" ></bean>
+        -->
+        
+        
+        <!-- 自动装配 default-autowire="byName" 自动寻找与id 完全相同 且唯一 的对象名称 并将bean的类的实例交给这个对象
+        
+        <bean id="autoWiringService" class="com.imooc.autowiring.AutoWiringService" />
+        <bean id="autoWiringDAO" class="com.imooc.autowiring.AutoWiringDAO" ></bean>
+        -->
+        
+        
+        
+        <!-- 自动装配  default-autowire="byType"
+        <bean id="autoWiringService" class="com.imooc.autowiring.AutoWiringService" />
+        <bean class="com.imooc.autowiring.AutoWiringDAO" ></bean>
+        -->
+        
+        
+        <!-- 自动装配 -->
+        default-autowire="byName"
+        <bean id="autoWiringService" class="com.imooc.autowiring.AutoWiringService" />
+        
+        <bean class="com.imooc.autowiring.AutoWiringDAO" ></bean>
+	
+ </beans>
