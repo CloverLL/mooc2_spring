@@ -6,7 +6,7 @@
 
         default-autowire="constructor" >
         
-        <!-- 手动装配 需要配置传入属性的值 以xml property的形式为service的属性赋值
+        <!-- 手动装配 no： 需要配置传入属性的值 以xml property的形式为service的属性赋值
         <bean id="autoWiringService" class="com.imooc.autowiring.AutoWiringService" >
         	<property name="autoWiringDAO" ref="autoWiringDAO"></property>
         </bean>
