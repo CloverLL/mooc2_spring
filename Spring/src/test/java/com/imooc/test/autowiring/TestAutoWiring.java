@@ -10,10 +10,16 @@ import com.imooc.test.base.UnitTestBase;
 @RunWith(BlockJUnit4ClassRunner.class)
 public class TestAutoWiring extends UnitTestBase {
 	
+	/**
+	 * 获取配置
+	 */
 	public TestAutoWiring() {
 		super("classpath:spring-autowiring.xml");
 	}
 	
+	/**
+	 * service 执行 赋值 调用
+	 */
 	@Test
 	public void testSay() {
 		AutoWiringService service = super.getBean("autoWiringService");
